@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import seng202.group8.viewcontrollers.filterviews.FilterView?>
+<fx:root fx:id="titledPane" type="FilterView" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <HBox fx:id="topHBox" prefWidth="200.0">
+      <children>
+         <ComboBox fx:id="combo" onAction="#comboSelected" prefWidth="120.0" style="-fx-font-size: 14;" />
+         <Region HBox.hgrow="ALWAYS" />
+      </children>
+   </HBox>
+   <HBox fx:id="bottomHBox" prefWidth="200.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="And">
+            <font>
+               <Font size="16.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+         </Text>
+         <Region HBox.hgrow="ALWAYS" />
+      </children>
+   </HBox>
+</fx:root>

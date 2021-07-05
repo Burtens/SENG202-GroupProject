@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<TableView fx:id="airlineTable" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewRow" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.group8.viewcontrollers.tablecontrollers.AirlineTableController">
+  <columns>
+    <TableColumn fx:id="nameColumn" prefWidth="75.0" sortable="false" text="Name" />
+    <TableColumn fx:id="codeColumn" prefWidth="75.0" sortable="false" text="Code" />
+      <TableColumn fx:id="callsignColumn" prefWidth="75.0" sortable="false" text="Callsign" />
+      <TableColumn fx:id="countryColumn" prefWidth="75.0" sortable="false" text="Country" />
+  </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>

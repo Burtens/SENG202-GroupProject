@@ -1,0 +1,108 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+
+/* https://developers.google.com/maps/documentation/javascript/examples/overlay-popup#maps_overlay_popup-javascript */
+/* The popup bubble styling. */
+.popup-bubble {
+    /* Position the bubble centred-above its parent. */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    /* Style the bubble. */
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    /* overflow-y: auto; */
+    /* max-height: 100px; */
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* The parent of the bubble. A zero-height div at the top of the tip. */
+.popup-bubble-anchor {
+    /* Position the div a fixed distance above the tip. */
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    left: 0;
+}
+
+/* JavaScript will position this div at the bottom of the popup tip. */
+.popup-container {
+    cursor: auto;
+    height: 0;
+    position: absolute;
+    /* The max width of the info window. */
+    width: 200px;
+    -webkit-user-select: none;
+}
+
+.popup-title {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.popup-airports, .popup-time {
+  font-size: 1.15em;
+  padding-top: 0.1em;
+}
+
+
+/* https://googlemaps.github.io/v3-utility-library/packages/markerclustererplus/examples/advanced_example.html */
+/* .custom-clustericon {
+    background: var(--cluster-color);
+    color: #fff;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-clustericon::before,
+  .custom-clustericon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: var(--cluster-color);
+    opacity: 0.2;
+    border-radius: 100%;
+  }
+
+  .custom-clustericon::before {
+    padding: 7px;
+  }
+
+  .custom-clustericon::after {
+    padding: 14px;
+  }
+
+  .custom-clustericon-1 {
+    --cluster-color: #00a2d3;
+  }
+
+  .custom-clustericon-2 {
+    --cluster-color: #ff9b00;
+  }
+
+  .custom-clustericon-3 {
+    --cluster-color: #ff6969;
+  } */

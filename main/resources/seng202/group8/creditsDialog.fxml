@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="600.0">
+         <content>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Photos/OtherLogo.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="M.A.T.T.I.A.S.">
+                           <font>
+                              <Font size="56.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="is proudly made by:">
+                     <font>
+                        <Font name="System Italic" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eric Song">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rio Ogino">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Samuel Burtenshaw">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mitchell Veale">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Josh Egan">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Niels van Antwerpen">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Special thanks to the SENG202 teaching team:" textAlignment="CENTER" wrappingWidth="260.0">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matthias Galster">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="75.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patricia Inez">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="75.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sam Shankland">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="75.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luke Walsh">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Label text="Icons made by:">
+                     <font>
+                        <Font name="System Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Google from Flaticon (https://www.flaticon.com/authors/google)" textAlignment="CENTER" wrappingWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="15.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freepik from Flaticon (https://www.flaticon.com/authors/freepik)" textAlignment="CENTER" wrappingWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="15.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vectors Market from Flaticon (https://www.flaticon.com/authors/vectors-market)" textAlignment="CENTER" wrappingWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  
+                           </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </content>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </ScrollPane>
+   </content>
+</DialogPane>

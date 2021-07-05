@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.group8.viewcontrollers.RootController">
+  <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <Menu mnemonicParsing="false" text="Import">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#importAirport" text="Airport Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#importAirline" text="Airline Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#importRoute" text="Route Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#importTrip" text="Trip Data" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Database">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openDatabase" text="Open Existing Database" />
+                        <MenuItem mnemonicParsing="false" onAction="#createDatabase" text="Create New Database" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#showCredits" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    <SplitPane dividerPositions="0.2205, 0.75" focusTraversable="true" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane fx:id="leftPane" prefHeight="551.0" prefWidth="127.0" />
+            <AnchorPane fx:id="tableViewAnchor" prefHeight="200.0" prefWidth="593.0" />
+            <AnchorPane fx:id="rightPane" minHeight="576.0" minWidth="336.0" prefHeight="576.0" prefWidth="336.0">
+               <children>
+                  <TabPane fx:id="detailsAndTripTabPane" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab fx:id="detailsTab">
+                        <content>
+                          <AnchorPane fx:id="detailsPane" minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" />
+                        </content>
+                           <graphic>
+                              <Label text="Details">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </graphic>
+                      </Tab>
+                      <Tab fx:id="tripTab">
+                        <content>
+                          <AnchorPane fx:id="tripPane" minHeight="0.0" minWidth="0.0" />
+                        </content>
+                           <graphic>
+                              <Label text="Trip">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </graphic>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+    </SplitPane>
+  </children>
+</VBox>

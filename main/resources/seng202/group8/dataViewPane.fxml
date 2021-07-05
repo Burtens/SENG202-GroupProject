@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<SplitPane dividerPositions="0.9020100502512562" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" SplitPane.resizableWithParent="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.group8.viewcontrollers.DataViewController">
+   <items>
+      <TabPane fx:id="dataTabPane" prefHeight="650.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="routeTab" onSelectionChanged="#tabSelected" text="Routes" />
+            <Tab fx:id="airlinesTab" onSelectionChanged="#tabSelected" text="Airlines" />
+            <Tab fx:id="airportsTab" onSelectionChanged="#tabSelected" text="Airports" />
+            <Tab fx:id="mapTab" onSelectionChanged="#tabSelected" text="Map" />
+         </tabs>
+      </TabPane>
+      <GridPane fx:id="controlPane" hgap="5.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="createNewButton" mnemonicParsing="false" onAction="#createNewButtonPressed" text="+ " GridPane.halignment="RIGHT" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Sort Order:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="sortOrderBox" prefHeight="25.0" prefWidth="102.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Sort Column:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="sortColumnBox" disable="true" prefHeight="25.0" prefWidth="102.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT">
+               <children>
+                  <Button fx:id="prevDataButton" alignment="CENTER" mnemonicParsing="false" onAction="#prevData" prefWidth="50.0" text="Prev">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="nextDataButton" alignment="CENTER" mnemonicParsing="false" onAction="#nextData" prefWidth="50.0" text="Next" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="RIGHT">
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="Rows loaded:">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider fx:id="rowsLoadedSlider" majorTickUnit="10.0" min="50.0" minorTickCount="0" prefWidth="143.0" showTickLabels="true" snapToTicks="true" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#loadData" text="Sort" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </items>
+</SplitPane>

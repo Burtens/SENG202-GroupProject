@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fx:id="root" type="VBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator>
+         <VBox.margin>
+            <Insets top="2.0" />
+         </VBox.margin>
+      </Separator>
+      <HBox>
+         <children>
+            <StackPane prefWidth="210.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <GridPane prefHeight="40.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="35.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" prefWidth="40.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Text fx:id="flightNumberText" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight 1:" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="startText" strokeType="OUTSIDE" strokeWidth="0.0" text="SRT" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="destText" strokeType="OUTSIDE" strokeWidth="0.0" text="DEST" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Text>
+                              <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                 <image>
+                                    <Image url="@Photos/black-plane.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="-10.0" left="5.0" />
+                           </padding>
+                        </GridPane>
+                        <VBox>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Depart: ">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="startDateTime" strokeType="OUTSIDE" strokeWidth="0.0" text="sdate">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="startAirportNameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Referenced Airport does not exist" wrappingWidth="250.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Separator prefWidth="200.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets bottom="2.0" top="2.0" />
+                                 </VBox.margin></Separator>
+                              <HBox prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Arrive: ">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="endDateTime" strokeType="OUTSIDE" strokeWidth="0.0" text="end">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Text fx:id="endAirportNameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Referenced Airport does not exist" wrappingWidth="250.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Text fx:id="priceText" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="airlineText" strokeType="OUTSIDE" strokeWidth="0.0" text="Airline" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets top="4.0" />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <BorderPane fx:id="errorTextPane" style="-fx-background-color: rgba(255, 255, 255, 0.9);" visible="false" StackPane.alignment="BOTTOM_LEFT">
+                     <center>
+                        <Text fx:id="warningText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="The route this flight references does not exist (it may have been deleted).  You may want to remove this flight." textAlignment="CENTER" wrappingWidth="250.0" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </Text>
+                     </center>
+                  </BorderPane>
+               </children>
+            </StackPane>
+            <VBox alignment="TOP_RIGHT">
+               <children>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#delete" text="X" textFill="RED">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="showErrorTextButton" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onAction="#toggleErrorTextSticky" onMouseEntered="#errorButtonEntered" onMouseExited="#errorButtonExited" style="-fx-background-color: red;" text=" ! " textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <TitledPane animated="false" expanded="false" text="Comment">
+         <content>
+            <VBox>
+               <children>
+                  <TextArea fx:id="commentArea" prefColumnCount="14" wrapText="true" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#saveComment" text="Save" />
+               </children>
+            </VBox>
+         </content>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </TitledPane>
+   </children>
+</fx:root>
